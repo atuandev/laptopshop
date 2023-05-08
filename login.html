@@ -18,6 +18,11 @@
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/core-style.css" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .input-active {
+        border-color: #119b56;
+      }
+    </style>
   </head>
 
   <body>
@@ -59,10 +64,12 @@
         <div class="header-meta d-flex clearfix justify-content-end">
           <!-- User Login Info -->
           <div class="user-login-info">
-            <a href="login.html"
+            <a href="#"
               ><img
                 src="img/core-img/user.svg"
                 alt=""
+                data-toggle="modal"
+                data-target="#login"
             /></a>
           </div>
           <!-- Cart Area -->
@@ -85,13 +92,13 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form onsubmit="login()">
               <!-- Email input -->
               <div class="form-outline mb-4">
                   <label class="form-label" for="form2Example1"
                     >Tên đăng nhập</label
                   >
-                <input type="email" id="form2Example1" class="form-control" />
+                <input type="text" id="form2Example1" class="form-control" />
               </div>
 
               <!-- Password input -->
@@ -114,27 +121,52 @@
       </div>
     </div>
 
-
-    <div class="contact-area d-flex align-items-center">
-
-        <div class="google-map">
-          <img src="./img/bg-img/blog1.jpg" alt="">
-        </div>
-
-        <div class="contact-info">
-            <h2>Laptop shop</h2>
-            <p>Shop Laptop  là một trung tâm mua sắm trực tuyến cung cấp các sản phẩm laptop giá rẻ và chất lượng cho sinh viên. Chúng tôi hiểu rằng việc mua một chiếc laptop có thể là một nỗi lo lớn cho nhiều sinh viên với ngân sách hạn hẹp, vì vậy chúng tôi cung cấp những sản phẩm đáng tin cậy với giá cả hợp lý.
-            </p>
-
-            <div class="contact-address mt-50">
-                <p><span>address:</span> 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh</p>
-                <p><span>telephone:</span> +12 34 567 890</p>
-                <p><a href="mailto:contact@essence.com">iuh@gmail.com</a></p>
+    <section class="register py-5">
+      <div class="row">
+        <div class="container">
+          <h1 class="text-center mb-5">Đăng nhập</h1>
+          <form class="form" onsubmit="login()">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-4">
+                        <label for="username">Tên đăng nhập</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="username" id="username" class="form-control" aria-describedby="usernameSP">
+                        <small id="usernameSP" class="text-danger"></small>
+                    </div>
+                </div>
             </div>
+            <div class="form-group">
+              <div class="row">
+                  <div class="col-4">
+                      <label for="gmail">Gmail</label>
+                  </div>
+                  <div class="col-8">
+                      <input type="email" name="gmail" id="gmail" class="form-control" aria-describedby="gmailSP">
+                      <small id="gmailSP" class="text-danger"></small>
+                  </div>
+              </div>
+          </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-4">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="password" name="password" id="password" class="form-control" aria-describedby="passwordSP">
+                        <small id="passwordSP" class="text-danger"></small>
+                    </div>
+                </div>
+            </div>
+            <p>Chưa có tài khoản? <a class="text-info" href="register.html">Đăng ký</a></p>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-success btn-block btn-lg bg-info text-body">Đăng nhập</button>
+            </div>
+          </form>
         </div>
-
-    </div>
-
+      </div>
+    </section>
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer_area clearfix">
         <div class="container">
@@ -221,7 +253,7 @@
     <!-- Google Maps -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
     <script src="js/map-active.js"></script>
-
+    <script src="loginValidate.js"></script>
 </body>
 
 </html>

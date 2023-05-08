@@ -59,13 +59,7 @@
         <div class="header-meta d-flex clearfix justify-content-end">
           <!-- User Login Info -->
           <div class="user-login-info">
-            <a href="#"
-              ><img
-                src="img/core-img/user.svg"
-                alt=""
-                data-toggle="modal"
-                data-target="#login"
-            /></a>
+            <a href="login.html"><img src="img/core-img/user.svg" alt="" /></a>
           </div>
           <!-- Cart Area -->
           <div class="cart-area">
@@ -87,28 +81,53 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                  <label class="form-label" for="form2Example1"
-                    >Tên đăng nhập</label
-                  >
-                <input type="email" id="form2Example1" class="form-control" />
-              </div>
+            <form class="form">
+              <div class="form-group">
+                <div class="container">
+                  <div class="row">
+                    <label for="hoTen">Tên đăng nhập</label>
+                  </div>
+                  <div class="row">
+                    <input
+                      type="text"
+                      name="hoTen"
+                      id="hoTen"
+                      class="form-control"
+                      aria-describedby="hoTenSP"
+                    />
+                    <small id="hoTenSP" class="text-danger"></small>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="container">
+                    <div class="row">
+                      <label for="password">Password</label>
+                    </div>
+                    <div class="row">
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control"
+                        aria-describedby="passwordSP"
+                      />
+                      <small id="passwordSP" class="text-danger"></small>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-1 mb-4">
+                  <button class="btn btn-dark btn-lg btn-block" type="button">
+                    Login
+                  </button>
+                </div>
 
-              <!-- Password input -->
-              <div class="form-outline mb-4">
-                  <label class="form-label" for="form2Example2">Mật khẩu</label>
-                <input
-                  type="password"
-                  id="form2Example2"
-                  class="form-control"
-                />
-              </div>
-              <!-- Submit button -->
-              <button type="button" class="btn btn-primary btn-block mb-4">
-                Đăng nhập
-              </button>
+                <a class="small text-muted" href="#!">Forgot password?</a>
+                <p class="pb-lg-2" style="color: #333">
+                  Don't have an account?
+                  <a href="register.html" style="color: #3784b8"
+                    >Register here</a
+                  >
+                </p>
               </div>
             </form>
           </div>
@@ -120,153 +139,149 @@
     <section
       class="welcome_area bg-img background-overlay"
       style="background-image: url(img/bg-img/banner.jpg)"
-    >
-    </section>
+    ></section>
     <!-- ##### Welcome Area End ##### -->
 
     <!-- ##### New Arrivals Area Start ##### -->
     <section class="new_arrivals_area section-padding-80 clearfix">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-heading text-center">
-                <h2>LAPTOP</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading text-center">
+              <h2>LAPTOP</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="popular-products-slides owl-carousel">
+              <!-- Single Product -->
+              <div class="single-product-wrapper">
+                <!-- Product Image -->
+                <div class="product-img">
+                  <img src="img/product-img/product-1.jpg" alt="" />
+                  <!-- Hover Thumb -->
+                  <img
+                    class="hover-img"
+                    src="img/product-img/product-2.jpg"
+                    alt=""
+                  />
+                  <!-- Favourite -->
+                  <div class="product-favourite">
+                    <a href="#" class="favme fa fa-heart"></a>
+                  </div>
+                </div>
+                <!-- Product Description -->
+                <div class="product-description">
+                  <span>topshop</span>
+                  <a href="single-product-details.html">
+                    <h6>Laptop Dell xps 15</h6>
+                  </a>
+                  <p class="product-price">$80.00</p>
+                </div>
+              </div>
+
+              <!-- Single Product -->
+              <div class="single-product-wrapper">
+                <!-- Product Image -->
+                <div class="product-img">
+                  <img src="img/product-img/product-2.jpg" alt="" />
+                  <!-- Hover Thumb -->
+                  <img
+                    class="hover-img"
+                    src="img/product-img/product-3.jpg"
+                    alt=""
+                  />
+                  <!-- Favourite -->
+                  <div class="product-favourite">
+                    <a href="#" class="favme fa fa-heart"></a>
+                  </div>
+                </div>
+                <!-- Product Description -->
+                <div class="product-description">
+                  <span>topshop</span>
+                  <a href="single-product-details.html">
+                    <h6>Laptop Dell xps 15</h6>
+                  </a>
+                  <p class="product-price">$80.00</p>
+                </div>
+              </div>
+
+              <!-- Single Product -->
+              <div class="single-product-wrapper">
+                <!-- Product Image -->
+                <div class="product-img">
+                  <img src="img/product-img/product-3.jpg" alt="" />
+                  <!-- Hover Thumb -->
+                  <img
+                    class="hover-img"
+                    src="img/product-img/product-4.jpg"
+                    alt=""
+                  />
+
+                  <!-- Product Badge -->
+                  <div class="product-badge offer-badge">
+                    <span>-30%</span>
+                  </div>
+
+                  <!-- Favourite -->
+                  <div class="product-favourite">
+                    <a href="#" class="favme fa fa-heart"></a>
+                  </div>
+                </div>
+                <!-- Product Description -->
+                <div class="product-description">
+                  <span>mango</span>
+                  <a href="single-product-details.html">
+                    <h6>Laptop Dell xps 15</h6>
+                  </a>
+                  <p class="product-price">
+                    <span class="old-price">$75.00</span> $55.00
+                  </p>
+                </div>
+              </div>
+
+              <!-- Single Product -->
+              <div class="single-product-wrapper">
+                <!-- Product Image -->
+                <div class="product-img">
+                  <img src="img/product-img/product-4.jpg" alt="" />
+                  <!-- Hover Thumb -->
+                  <img
+                    class="hover-img"
+                    src="img/product-img/product-5.jpg"
+                    alt=""
+                  />
+
+                  <!-- Product Badge -->
+                  <div class="product-badge new-badge">
+                    <span>New</span>
+                  </div>
+
+                  <!-- Favourite -->
+                  <div class="product-favourite">
+                    <a href="#" class="favme fa fa-heart"></a>
+                  </div>
+                </div>
+                <!-- Product Description -->
+                <div class="product-description">
+                  <span>mango</span>
+                  <a href="single-product-details.html">
+                    <h6>Laptop Dell xps 15</h6>
+                  </a>
+                  <p class="product-price">$80.00</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-  
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="popular-products-slides owl-carousel">
-                <!-- Single Product -->
-                <div class="single-product-wrapper">
-                  <!-- Product Image -->
-                  <div class="product-img">
-                    <img src="img/product-img/product-1.jpg" alt="" />
-                    <!-- Hover Thumb -->
-                    <img
-                      class="hover-img"
-                      src="img/product-img/product-2.jpg"
-                      alt=""
-                    />
-                    <!-- Favourite -->
-                    <div class="product-favourite">
-                      <a href="#" class="favme fa fa-heart"></a>
-                    </div>
-                  </div>
-                  <!-- Product Description -->
-                  <div class="product-description">
-                    <span>topshop</span>
-                    <a href="single-product-details.html">
-                      <h6>Laptop Dell xps 15</h6>
-                    </a>
-                    <p class="product-price">$80.00</p>
-                  </div>
-                </div>
-  
-                <!-- Single Product -->
-                <div class="single-product-wrapper">
-                  <!-- Product Image -->
-                  <div class="product-img">
-                    <img src="img/product-img/product-2.jpg" alt="" />
-                    <!-- Hover Thumb -->
-                    <img
-                      class="hover-img"
-                      src="img/product-img/product-3.jpg"
-                      alt=""
-                    />
-                    <!-- Favourite -->
-                    <div class="product-favourite">
-                      <a href="#" class="favme fa fa-heart"></a>
-                    </div>
-                  </div>
-                  <!-- Product Description -->
-                  <div class="product-description">
-                    <span>topshop</span>
-                    <a href="single-product-details.html">
-                      <h6>Laptop Dell xps 15</h6>
-                    </a>
-                    <p class="product-price">$80.00</p>
+      </div>
+    </section>
+    <!-- ##### New Arrivals Area End ##### -->
 
-                  </div>
-                </div>
-  
-                <!-- Single Product -->
-                <div class="single-product-wrapper">
-                  <!-- Product Image -->
-                  <div class="product-img">
-                    <img src="img/product-img/product-3.jpg" alt="" />
-                    <!-- Hover Thumb -->
-                    <img
-                      class="hover-img"
-                      src="img/product-img/product-4.jpg"
-                      alt=""
-                    />
-  
-                    <!-- Product Badge -->
-                    <div class="product-badge offer-badge">
-                      <span>-30%</span>
-                    </div>
-  
-                    <!-- Favourite -->
-                    <div class="product-favourite">
-                      <a href="#" class="favme fa fa-heart"></a>
-                    </div>
-                  </div>
-                  <!-- Product Description -->
-                  <div class="product-description">
-                    <span>mango</span>
-                    <a href="single-product-details.html">
-                      <h6>Laptop Dell xps 15</h6>
-                    </a>
-                    <p class="product-price">
-                      <span class="old-price">$75.00</span> $55.00
-                    </p>
-
-                  </div>
-                </div>
-  
-                <!-- Single Product -->
-                <div class="single-product-wrapper">
-                  <!-- Product Image -->
-                  <div class="product-img">
-                    <img src="img/product-img/product-4.jpg" alt="" />
-                    <!-- Hover Thumb -->
-                    <img
-                      class="hover-img"
-                      src="img/product-img/product-5.jpg"
-                      alt=""
-                    />
-  
-                    <!-- Product Badge -->
-                    <div class="product-badge new-badge">
-                      <span>New</span>
-                    </div>
-  
-                    <!-- Favourite -->
-                    <div class="product-favourite">
-                      <a href="#" class="favme fa fa-heart"></a>
-                    </div>
-                  </div>
-                  <!-- Product Description -->
-                  <div class="product-description">
-                    <span>mango</span>
-                    <a href="single-product-details.html">
-                      <h6>Laptop Dell xps 15</h6>
-                    </a>
-                    <p class="product-price">$80.00</p>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ##### New Arrivals Area End ##### -->
-  
     <!-- ##### CTA Area Start ##### -->
     <div class="cta-area">
       <div class="container">
@@ -275,8 +290,7 @@
             <div
               class="cta-content bg-img background-overlay"
               style="background-image: url(img/bg-img/bg-5.jpg)"
-            >
-            </div>
+            ></div>
           </div>
         </div>
       </div>
@@ -469,9 +483,7 @@
                     class="mail"
                     placeholder="Your email here"
                   />
-                  <button type="submit" class="submit">
-                    Send
-                  </button>
+                  <button type="submit" class="submit">Send</button>
                 </form>
               </div>
             </div>
@@ -505,5 +517,6 @@
     <script src="js/classy-nav.min.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script src="./loginValidate.js"></script>
   </body>
 </html>
