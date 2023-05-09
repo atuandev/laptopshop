@@ -59,604 +59,685 @@
         <div class="header-meta d-flex clearfix justify-content-end">
           <!-- User Login Info -->
           <div class="user-login-info">
-            <a href="login.html"
-              ><img
-                src="img/core-img/user.svg"
-                alt=""
-            /></a>
+            <a href="login.html"><img src="img/core-img/user.svg" alt="" /></a>
           </div>
           <!-- Cart Area -->
           <div class="cart-area">
-            <a href="#" id="essenceCartBtn"
-              ><img src="img/core-img/bag.svg" alt="" /> <span>3</span></a
-            >
+            <a onclick="showCart()" id="essenceCartBtn"
+              ><img src="img/core-img/bag.svg" alt="" /> <span class="countSp"></span
+            ></a>
           </div>
         </div>
       </div>
     </header>
-    <!-- Modal -->
-    <div class="modal fade" id="login" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Đăng nhập</h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                  <label class="form-label" for="form2Example1"
-                    >Tên đăng nhập</label
-                  >
-                <input type="email" id="form2Example1" class="form-control" />
-              </div>
 
-              <!-- Password input -->
-              <div class="form-outline mb-4">
-                  <label class="form-label" for="form2Example2">Mật khẩu</label>
-                <input
-                  type="password"
-                  id="form2Example2"
-                  class="form-control"
-                />
-              </div>
-              <!-- Submit button -->
-              <button type="button" class="btn btn-primary btn-block mb-4">
-                Đăng nhập
-              </button>
-              </div>
-            </form>
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div
+      class="breadcumb_area bg-img"
+      style="background-image: url(img/bg-img/breadcumb.jpg)"
+    >
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12">
+            <div class="page-title text-center">
+              <h2>Laptop</h2>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-
-    <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb_area bg-img" style="background-image: url(img/bg-img/breadcumb.jpg);">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12">
-                    <div class="page-title text-center">
-                        <h2>Laptop</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- ##### Breadcumb Area End ##### -->
 
     <!-- ##### Shop Grid Area Start ##### -->
     <section class="shop_grid_area section-padding-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="shop_sidebar_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+            <div class="shop_sidebar_area">
+              <!-- ##### Single Widget ##### -->
+              <div class="widget catagory mb-50">
+                <!-- Widget Title -->
+                <h6 class="widget-title mb-30">Catagories</h6>
 
-                        <!-- ##### Single Widget ##### -->
-                        <div class="widget catagory mb-50">
-                            <!-- Widget Title -->
-                            <h6 class="widget-title mb-30">Catagories</h6>
-
-                            <!--  Catagories  -->
-                            <div class="catagories-menu">
-                                <ul id="menu-content2" class="menu-content collapse show">
-                                    <li data-toggle="collapse" data-target="#clothing">
-                                        <a style="color: #333" href="#">Laptop gaming</a>
-                                        <ul class="sub-menu collapse show" id="clothing">
-                                            <li><a href="#">Dell</a></li>
-                                            <li><a href="#">Asus</a></li>
-                                            <li><a href="#">Msi</a></li>
-                                            <li><a href="#">Apple</a></li>
-                                            <li><a href="#">Lenovo</a></li>
-                                            <li><a href="#">Hp</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- ##### Single Widget ##### -->
-                        <div class="widget price mb-50">
-                            <!-- Widget Title -->
-                            <h6 class="widget-title mb-30">Filter by</h6>
-                            <!-- Widget Title 2 -->
-                            <p class="widget-title2 mb-30">Price</p>
-
-                            <div class="widget-desc">
-                                <div class="slider-range">
-                                    <div data-min="49" data-max="360" data-unit="$" class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-value-min="49" data-value-max="360" data-label-result="Range:">
-                                        <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
-                                        <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
-                                        <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
-                                    </div>
-                                    <div class="range-price">Range: $49.00 - $360.00</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ##### Single Widget ##### -->
-                        <div class="widget color mb-50">
-                            <!-- Widget Title 2 -->
-                            <p class="widget-title2 mb-30">Color</p>
-                            <div class="widget-desc">
-                                <ul class="d-flex">
-                                    <li><a href="#" class="color1"></a></li>
-                                    <li><a href="#" class="color2"></a></li>
-                                    <li><a href="#" class="color3"></a></li>
-                                    <li><a href="#" class="color4"></a></li>
-                                    <li><a href="#" class="color5"></a></li>
-                                    <li><a href="#" class="color6"></a></li>
-                                    <li><a href="#" class="color7"></a></li>
-                                    <li><a href="#" class="color8"></a></li>
-                                    <li><a href="#" class="color9"></a></li>
-                                    <li><a href="#" class="color10"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- ##### Single Widget ##### -->
-                        <div class="widget brands mb-50">
-                            <!-- Widget Title 2 -->
-                            <p class="widget-title2 mb-30">Brands</p>
-                            <div class="widget-desc">
-                                <ul>
-                                    <li><a href="#">Asos</a></li>
-                                    <li><a href="#">Mango</a></li>
-                                    <li><a href="#">River Island</a></li>
-                                    <li><a href="#">Topshop</a></li>
-                                    <li><a href="#">Zara</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <!--  Catagories  -->
+                <div class="catagories-menu">
+                  <ul id="menu-content2" class="menu-content collapse show">
+                    <li data-toggle="collapse" data-target="#clothing">
+                      <a style="color: #333" href="#">Laptop gaming</a>
+                      <ul class="sub-menu collapse show" id="clothing">
+                        <li><a href="#">Dell</a></li>
+                        <li><a href="#">Asus</a></li>
+                        <li><a href="#">Msi</a></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Lenovo</a></li>
+                        <li><a href="#">Hp</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
+              </div>
 
-                <div class="col-12 col-md-8 col-lg-9">
-                    <div class="shop_grid_product_area">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="product-topbar d-flex align-items-center justify-content-between">
-                                    <!-- Total Products -->
-                                    <div class="total-products">
-                                        <p><span>186</span> products found</p>
-                                    </div>
-                                    <!-- Sorting -->
-                                    <div class="product-sorting d-flex">
-                                        <p>Sort by:</p>
-                                        <form action="#" method="get">
-                                            <select name="select" id="sortByselect">
-                                                <option value="value">Highest Rated</option>
-                                                <option value="value">Newest</option>
-                                                <option value="value">Price: $$ - $</option>
-                                                <option value="value">Price: $ - $$</option>
-                                            </select>
-                                            <input type="submit" class="d-none" value="">
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+              <!-- ##### Single Widget ##### -->
+              <div class="widget price mb-50">
+                <!-- Widget Title -->
+                <h6 class="widget-title mb-30">Filter by</h6>
+                <!-- Widget Title 2 -->
+                <p class="widget-title2 mb-30">Price</p>
 
-                        <div class="row">
-
-                            <!-- Single Product -->
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-wrapper">
-                                    <!-- Product Image -->
-                                    <div class="product-img">
-                                        <img src="img/product-img/product-1.jpg" alt="">
-                                        <!-- Hover Thumb -->
-                                        <img class="hover-img" src="img/product-img/product-2.jpg" alt="">
-
-                                        <!-- Product Badge -->
-                                        <div class="product-badge offer-badge">
-                                            <span>-30%</span>
-                                        </div>
-                                        <!-- Favourite -->
-                                        <div class="product-favourite">
-                                            <a href="#" class="favme fa fa-heart"></a>
-                                        </div>
-                                    </div>
-
-                                    <!-- Product Description -->
-                                    <div class="product-description">
-                                        <span>topshop</span>
-                                        <a href="single-product-details.html">
-                                            <h6>Laptop Dell Latitute 15</h6>
-                                        </a>
-                                        <p class="product-price"><span class="old-price">$75.00</span> $55.00</p>
-
-                                        <!-- Hover Content -->
-                                        <div class="hover-content">
-                                            <!-- Add to Cart -->
-                                            <div class="add-to-cart-btn">
-                                                <a href="#" class="btn essence-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Product -->
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-wrapper">
-                                    <!-- Product Image -->
-                                    <div class="product-img">
-                                        <img src="img/product-img/product-2.jpg" alt="">
-                                        <!-- Hover Thumb -->
-                                        <img class="hover-img" src="img/product-img/product-3.jpg" alt="">
-
-                                        <!-- Favourite -->
-                                        <div class="product-favourite">
-                                            <a href="#" class="favme fa fa-heart"></a>
-                                        </div>
-                                    </div>
-
-                                    <!-- Product Description -->
-                                    <div class="product-description">
-                                        <span>topshop</span>
-                                        <a href="single-product-details.html">
-                                            <h6>Laptop Dell Latitute 15</h6>
-                                        </a>
-                                        <p class="product-price">$80.00</p>
-
-                                        <!-- Hover Content -->
-                                        <div class="hover-content">
-                                            <!-- Add to Cart -->
-                                            <div class="add-to-cart-btn">
-                                                <a href="#" class="btn essence-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Product -->
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-wrapper">
-                                    <!-- Product Image -->
-                                    <div class="product-img">
-                                        <img src="img/product-img/product-3.jpg" alt="">
-                                        <!-- Hover Thumb -->
-                                        <img class="hover-img" src="img/product-img/product-4.jpg" alt="">
-
-                                        <!-- Product Badge -->
-                                        <div class="product-badge new-badge">
-                                            <span>New</span>
-                                        </div>
-
-                                        <!-- Favourite -->
-                                        <div class="product-favourite">
-                                            <a href="#" class="favme fa fa-heart"></a>
-                                        </div>
-                                    </div>
-
-                                    <!-- Product Description -->
-                                    <div class="product-description">
-                                        <span>topshop</span>
-                                        <a href="single-product-details.html">
-                                            <h6>Laptop Dell Latitute 15</h6>
-                                        </a>
-                                        <p class="product-price">$80.00</p>
-
-                                        <!-- Hover Content -->
-                                        <div class="hover-content">
-                                            <!-- Add to Cart -->
-                                            <div class="add-to-cart-btn">
-                                                <a href="#" class="btn essence-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Product -->
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-wrapper">
-                                    <!-- Product Image -->
-                                    <div class="product-img">
-                                        <img src="img/product-img/product-4.jpg" alt="">
-                                        <!-- Hover Thumb -->
-                                        <img class="hover-img" src="img/product-img/product-5.jpg" alt="">
-
-                                        <!-- Favourite -->
-                                        <div class="product-favourite">
-                                            <a href="#" class="favme fa fa-heart"></a>
-                                        </div>
-                                    </div>
-
-                                    <!-- Product Description -->
-                                    <div class="product-description">
-                                        <span>topshop</span>
-                                        <a href="single-product-details.html">
-                                            <h6>Laptop Dell Latitute 15</h6>
-                                        </a>
-                                        <p class="product-price">$80.00</p>
-
-                                        <!-- Hover Content -->
-                                        <div class="hover-content">
-                                            <!-- Add to Cart -->
-                                            <div class="add-to-cart-btn">
-                                                <a href="#" class="btn essence-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Product -->
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-wrapper">
-                                    <!-- Product Image -->
-                                    <div class="product-img">
-                                        <img src="img/product-img/product-5.jpg" alt="">
-                                        <!-- Hover Thumb -->
-                                        <img class="hover-img" src="img/product-img/product-6.jpg" alt="">
-
-                                        <!-- Product Badge -->
-                                        <div class="product-badge offer-badge">
-                                            <span>-30%</span>
-                                        </div>
-
-                                        <!-- Favourite -->
-                                        <div class="product-favourite">
-                                            <a href="#" class="favme fa fa-heart"></a>
-                                        </div>
-                                    </div>
-
-                                    <!-- Product Description -->
-                                    <div class="product-description">
-                                        <span>topshop</span>
-                                        <a href="single-product-details.html">
-                                            <h6>Laptop Dell Latitute 15</h6>
-                                        </a>
-                                        <p class="product-price"><span class="old-price">$75.00</span> $55.00</p>
-
-                                        <!-- Hover Content -->
-                                        <div class="hover-content">
-                                            <!-- Add to Cart -->
-                                            <div class="add-to-cart-btn">
-                                                <a href="#" class="btn essence-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Product -->
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-wrapper">
-                                    <!-- Product Image -->
-                                    <div class="product-img">
-                                        <img src="img/product-img/product-6.jpg" alt="">
-                                        <!-- Hover Thumb -->
-                                        <img class="hover-img" src="img/product-img/product-7.jpg" alt="">
-
-                                        <!-- Favourite -->
-                                        <div class="product-favourite">
-                                            <a href="#" class="favme fa fa-heart"></a>
-                                        </div>
-                                    </div>
-
-                                    <!-- Product Description -->
-                                    <div class="product-description">
-                                        <span>topshop</span>
-                                        <a href="single-product-details.html">
-                                            <h6>Laptop Dell Latitute 15</h6>
-                                        </a>
-                                        <p class="product-price">$80.00</p>
-
-                                        <!-- Hover Content -->
-                                        <div class="hover-content">
-                                            <!-- Add to Cart -->
-                                            <div class="add-to-cart-btn">
-                                                <a href="#" class="btn essence-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Product -->
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-wrapper">
-                                    <!-- Product Image -->
-                                    <div class="product-img">
-                                        <img src="img/product-img/product-7.jpg" alt="">
-                                        <!-- Hover Thumb -->
-                                        <img class="hover-img" src="img/product-img/product-8.jpg" alt="">
-
-                                        <!-- Product Badge -->
-                                        <div class="product-badge new-badge">
-                                            <span>New</span>
-                                        </div>
-
-                                        <!-- Favourite -->
-                                        <div class="product-favourite">
-                                            <a href="#" class="favme fa fa-heart"></a>
-                                        </div>
-                                    </div>
-
-                                    <!-- Product Description -->
-                                    <div class="product-description">
-                                        <span>topshop</span>
-                                        <a href="single-product-details.html">
-                                            <h6>Laptop Dell Latitute 15</h6>
-                                        </a>
-                                        <p class="product-price">$80.00</p>
-
-                                        <!-- Hover Content -->
-                                        <div class="hover-content">
-                                            <!-- Add to Cart -->
-                                            <div class="add-to-cart-btn">
-                                                <a href="#" class="btn essence-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Product -->
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-wrapper">
-                                    <!-- Product Image -->
-                                    <div class="product-img">
-                                        <img src="img/product-img/product-8.jpg" alt="">
-                                        <!-- Hover Thumb -->
-                                        <img class="hover-img" src="img/product-img/product-9.jpg" alt="">
-                                        
-                                        <!-- Favourite -->
-                                        <div class="product-favourite">
-                                            <a href="#" class="favme fa fa-heart"></a>
-                                        </div>
-                                    </div>
-
-                                    <!-- Product Description -->
-                                    <div class="product-description">
-                                        <span>topshop</span>
-                                        <a href="single-product-details.html">
-                                            <h6>Laptop Dell Latitute 15</h6>
-                                        </a>
-                                        <p class="product-price">$80.00</p>
-
-                                        <!-- Hover Content -->
-                                        <div class="hover-content">
-                                            <!-- Add to Cart -->
-                                            <div class="add-to-cart-btn">
-                                                <a href="#" class="btn essence-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Product -->
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="single-product-wrapper">
-                                    <!-- Product Image -->
-                                    <div class="product-img">
-                                        <img src="img/product-img/product-9.jpg" alt="">
-                                        <!-- Hover Thumb -->
-                                        <img class="hover-img" src="img/product-img/product-1.jpg" alt="">
-
-                                        <!-- Favourite -->
-                                        <div class="product-favourite">
-                                            <a href="#" class="favme fa fa-heart"></a>
-                                        </div>
-                                    </div>
-
-                                    <!-- Product Description -->
-                                    <div class="product-description">
-                                        <span>topshop</span>
-                                        <a href="single-product-details.html">
-                                            <h6>Laptop Dell Latitute 15</h6>
-                                        </a>
-                                        <p class="product-price">$80.00</p>
-
-                                        <!-- Hover Content -->
-                                        <div class="hover-content">
-                                            <!-- Add to Cart -->
-                                            <div class="add-to-cart-btn">
-                                                <a href="#" class="btn essence-btn">Add to Cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                <div class="widget-desc">
+                  <div class="slider-range">
+                    <div
+                      data-min="49"
+                      data-max="360"
+                      data-unit="$"
+                      class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                      data-value-min="49"
+                      data-value-max="360"
+                      data-label-result="Range:"
+                    >
+                      <div
+                        class="ui-slider-range ui-widget-header ui-corner-all"
+                      ></div>
+                      <span
+                        class="ui-slider-handle ui-state-default ui-corner-all"
+                        tabindex="0"
+                      ></span>
+                      <span
+                        class="ui-slider-handle ui-state-default ui-corner-all"
+                        tabindex="0"
+                      ></span>
                     </div>
-                    <!-- Pagination -->
-                    <nav aria-label="navigation">
-                        <ul class="pagination mt-50 mb-70">
-                            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">...</a></li>
-                            <li class="page-item"><a class="page-link" href="#">21</a></li>
-                            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
-                        </ul>
-                    </nav>
+                    <div class="range-price">Range: $49.00 - $360.00</div>
+                  </div>
                 </div>
+              </div>
+
+              <!-- ##### Single Widget ##### -->
+              <div class="widget color mb-50">
+                <!-- Widget Title 2 -->
+                <p class="widget-title2 mb-30">Color</p>
+                <div class="widget-desc">
+                  <ul class="d-flex">
+                    <li><a href="#" class="color1"></a></li>
+                    <li><a href="#" class="color2"></a></li>
+                    <li><a href="#" class="color3"></a></li>
+                    <li><a href="#" class="color4"></a></li>
+                    <li><a href="#" class="color5"></a></li>
+                    <li><a href="#" class="color6"></a></li>
+                    <li><a href="#" class="color7"></a></li>
+                    <li><a href="#" class="color8"></a></li>
+                    <li><a href="#" class="color9"></a></li>
+                    <li><a href="#" class="color10"></a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- ##### Single Widget ##### -->
+              <div class="widget brands mb-50">
+                <!-- Widget Title 2 -->
+                <p class="widget-title2 mb-30">Brands</p>
+                <div class="widget-desc">
+                  <ul>
+                    <li><a href="#">Asos</a></li>
+                    <li><a href="#">Mango</a></li>
+                    <li><a href="#">River Island</a></li>
+                    <li><a href="#">Topshop</a></li>
+                    <li><a href="#">Zara</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-12 col-md-8 col-lg-9">
+            <div class="shop_grid_product_area">
+              <div class="row">
+                <div class="col-12">
+                  <div
+                    class="product-topbar d-flex align-items-center justify-content-between"
+                  >
+                    <!-- Total Products -->
+                    <div class="total-products">
+                      <p><span>186</span> products found</p>
+                    </div>
+                    <!-- Sorting -->
+                    <div class="product-sorting d-flex">
+                      <p>Sort by:</p>
+                      <form action="#" method="get">
+                        <select name="select" id="sortByselect">
+                          <option value="value">Highest Rated</option>
+                          <option value="value">Newest</option>
+                          <option value="value">Price: $$ - $</option>
+                          <option value="value">Price: $ - $$</option>
+                        </select>
+                        <input type="submit" class="d-none" value="" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- Single Product -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="single-product-wrapper">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                      <img src="img/product-img/product-1.jpg" alt="" />
+                      <!-- Hover Thumb -->
+                      <img
+                        class="hover-img"
+                        src="img/product-img/product-2.jpg"
+                        alt=""
+                      />
+
+                      <!-- Product Badge -->
+                      <div class="product-badge offer-badge">
+                        <span>-30%</span>
+                      </div>
+                      <!-- Favourite -->
+                      <div class="product-favourite">
+                        <a href="#" class="favme fa fa-heart"></a>
+                      </div>
+                    </div>
+
+                    <!-- Product Description -->
+                    <div class="product-description">
+                      <span>topshop</span>
+                      <a href="single-product-details.html">
+                        <h6>Laptop Dell Latitute 15</h6>
+                      </a>
+                      <p class="product-price">$<span>55.00</span></p>
+
+                      <!-- Hover Content -->
+                      <div class="hover-content">
+                        <div class="add-to-cart-btn">
+                          <button
+                            onclick="themGioHang(this)"
+                            class="btn essence-btn"
+                          >
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Product -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="single-product-wrapper">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                      <img src="img/product-img/product-2.jpg" alt="" />
+                      <!-- Hover Thumb -->
+                      <img
+                        class="hover-img"
+                        src="img/product-img/product-3.jpg"
+                        alt=""
+                      />
+
+                      <!-- Favourite -->
+                      <div class="product-favourite">
+                        <a href="#" class="favme fa fa-heart"></a>
+                      </div>
+                    </div>
+
+                    <!-- Product Description -->
+                    <div class="product-description">
+                      <span>topshop</span>
+                      <a href="single-product-details.html">
+                        <h6>Laptop Dell Latitute 15</h6>
+                      </a>
+                      <p class="product-price">$<span>150.00</span></p>
+
+                      <!-- Hover Content -->
+                      <div class="hover-content">
+                        <!-- Add to Cart -->
+                        <div class="add-to-cart-btn">
+                          <button
+                            onclick="themGioHang(this)"
+                            class="btn essence-btn"
+                          >
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Product -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="single-product-wrapper">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                      <img src="img/product-img/product-3.jpg" alt="" />
+                      <!-- Hover Thumb -->
+                      <img
+                        class="hover-img"
+                        src="img/product-img/product-4.jpg"
+                        alt=""
+                      />
+
+                      <!-- Product Badge -->
+                      <div class="product-badge new-badge">
+                        <span>New</span>
+                      </div>
+
+                      <!-- Favourite -->
+                      <div class="product-favourite">
+                        <a href="#" class="favme fa fa-heart"></a>
+                      </div>
+                    </div>
+
+                    <!-- Product Description -->
+                    <div class="product-description">
+                      <span>topshop</span>
+                      <a href="single-product-details.html">
+                        <h6>Laptop Dell Latitute 15</h6>
+                      </a>
+                      <p class="product-price">$<span>80.00</span></p>
+
+                      <!-- Hover Content -->
+                      <div class="hover-content">
+                        <!-- Add to Cart -->
+                        <div class="add-to-cart-btn">
+                          <button
+                            onclick="themGioHang(this)"
+                            class="btn essence-btn"
+                          >
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Product -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="single-product-wrapper">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                      <img src="img/product-img/product-4.jpg" alt="" />
+                      <!-- Hover Thumb -->
+                      <img
+                        class="hover-img"
+                        src="img/product-img/product-5.jpg"
+                        alt=""
+                      />
+
+                      <!-- Favourite -->
+                      <div class="product-favourite">
+                        <a href="#" class="favme fa fa-heart"></a>
+                      </div>
+                    </div>
+
+                    <!-- Product Description -->
+                    <div class="product-description">
+                      <span>topshop</span>
+                      <a href="single-product-details.html">
+                        <h6>Laptop Dell Latitute 15</h6>
+                      </a>
+                      <p class="product-price">$<span>80.00</span></p>
+
+                      <!-- Hover Content -->
+                      <div class="hover-content">
+                        <!-- Add to Cart -->
+                        <div class="add-to-cart-btn">
+                          <button
+                            onclick="themGioHang(this)"
+                            class="btn essence-btn"
+                          >
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Product -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="single-product-wrapper">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                      <img src="img/product-img/product-5.jpg" alt="" />
+                      <!-- Hover Thumb -->
+                      <img
+                        class="hover-img"
+                        src="img/product-img/product-6.jpg"
+                        alt=""
+                      />
+
+                      <!-- Product Badge -->
+                      <div class="product-badge offer-badge">
+                        <span>-30%</span>
+                      </div>
+
+                      <!-- Favourite -->
+                      <div class="product-favourite">
+                        <a href="#" class="favme fa fa-heart"></a>
+                      </div>
+                    </div>
+
+                    <!-- Product Description -->
+                    <div class="product-description">
+                      <span>topshop</span>
+                      <a href="single-product-details.html">
+                        <h6>Laptop Dell Latitute 15</h6>
+                      </a>
+                      <p class="product-price">$<span>55.00</span></p>
+
+                      <!-- Hover Content -->
+                      <div class="hover-content">
+                        <!-- Add to Cart -->
+                        <div class="add-to-cart-btn">
+                          <button
+                            onclick="themGioHang(this)"
+                            class="btn essence-btn"
+                          >
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Product -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="single-product-wrapper">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                      <img src="img/product-img/product-6.jpg" alt="" />
+                      <!-- Hover Thumb -->
+                      <img
+                        class="hover-img"
+                        src="img/product-img/product-7.jpg"
+                        alt=""
+                      />
+
+                      <!-- Favourite -->
+                      <div class="product-favourite">
+                        <a href="#" class="favme fa fa-heart"></a>
+                      </div>
+                    </div>
+
+                    <!-- Product Description -->
+                    <div class="product-description">
+                      <span>topshop</span>
+                      <a href="single-product-details.html">
+                        <h6>Laptop Dell Latitute 15</h6>
+                      </a>
+                      <p class="product-price">$<span>120.00</span></p>
+
+                      <!-- Hover Content -->
+                      <div class="hover-content">
+                        <!-- Add to Cart -->
+                        <div class="add-to-cart-btn">
+                          <button
+                            onclick="themGioHang(this)"
+                            class="btn essence-btn"
+                          >
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Product -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="single-product-wrapper">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                      <img src="img/product-img/product-7.jpg" alt="" />
+                      <!-- Hover Thumb -->
+                      <img
+                        class="hover-img"
+                        src="img/product-img/product-8.jpg"
+                        alt=""
+                      />
+
+                      <!-- Product Badge -->
+                      <div class="product-badge new-badge">
+                        <span>New</span>
+                      </div>
+
+                      <!-- Favourite -->
+                      <div class="product-favourite">
+                        <a href="#" class="favme fa fa-heart"></a>
+                      </div>
+                    </div>
+
+                    <!-- Product Description -->
+                    <div class="product-description">
+                      <span>topshop</span>
+                      <a href="single-product-details.html">
+                        <h6>Laptop Dell Latitute 15</h6>
+                      </a>
+                      <p class="product-price">$<span>100.00</span></p>
+
+                      <!-- Hover Content -->
+                      <div class="hover-content">
+                        <!-- Add to Cart -->
+                        <div class="add-to-cart-btn">
+                          <button
+                            onclick="themGioHang(this)"
+                            class="btn essence-btn"
+                          >
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Product -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="single-product-wrapper">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                      <img src="img/product-img/product-8.jpg" alt="" />
+                      <!-- Hover Thumb -->
+                      <img
+                        class="hover-img"
+                        src="img/product-img/product-9.jpg"
+                        alt=""
+                      />
+
+                      <!-- Favourite -->
+                      <div class="product-favourite">
+                        <a href="#" class="favme fa fa-heart"></a>
+                      </div>
+                    </div>
+
+                    <!-- Product Description -->
+                    <div class="product-description">
+                      <span>topshop</span>
+                      <a href="single-product-details.html">
+                        <h6>Laptop Dell Latitute 15</h6>
+                      </a>
+                      <p class="product-price">$<span>180.00</span></p>
+
+                      <!-- Hover Content -->
+                      <div class="hover-content">
+                        <!-- Add to Cart -->
+                        <div class="add-to-cart-btn">
+                          <button
+                            onclick="themGioHang(this)"
+                            class="btn essence-btn"
+                          >
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Product -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div class="single-product-wrapper">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                      <img src="img/product-img/product-9.jpg" alt="" />
+                      <!-- Hover Thumb -->
+                      <img
+                        class="hover-img"
+                        src="img/product-img/product-1.jpg"
+                        alt=""
+                      />
+
+                      <!-- Favourite -->
+                      <div class="product-favourite">
+                        <a href="#" class="favme fa fa-heart"></a>
+                      </div>
+                    </div>
+
+                    <!-- Product Description -->
+                    <div class="product-description">
+                      <span>topshop</span>
+                      <a href="single-product-details.html">
+                        <h6>Laptop Dell Latitute 15</h6>
+                      </a>
+                      <p class="product-price">$<span>800.00</span></p>
+
+                      <!-- Hover Content -->
+                      <div class="hover-content">
+                        <!-- Add to Cart -->
+                        <div class="add-to-cart-btn">
+                          <button
+                            onclick="themGioHang(this)"
+                            class="btn essence-btn"
+                          >
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="showCart hidden">
+                <table class="table">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Hình</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Màu</th>
+                    <th>Thành tiền</th>
+                  </tr>
+                </thead>
+                <tbody id="myCart">
+                </tbody>
+              </table>
+              <h5 class="tong text-right text-dark mr-5 font-weight-bold"></h3>
+              <div class="row justify-content-end mr-5 mb-3">
+                <a href="checkout.html" class="btn essence-btn justify-content-center text-light">Check out</a>
+              </div>
+            </div>
+            <!-- Pagination -->
+            <nav aria-label="navigation">
+              <ul class="pagination mt-50 mb-70">
+                <li class="page-item">
+                  <a class="page-link" href="#"
+                    ><i class="fa fa-angle-left"></i
+                  ></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                <li class="page-item"><a class="page-link" href="#">21</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#"
+                    ><i class="fa fa-angle-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </section>
     <!-- ##### Shop Grid Area End ##### -->
 
-<!-- ##### Footer Area Start ##### -->
-<footer class="footer_area clearfix">
-    <div class="container">
-      <div class="row">
-        <!-- Single Widget Area -->
-        <div class="col-12 col-md-6">
-          <div class="single_widget_area d-flex mb-30">
-            <!-- Footer Menu -->
-            <div class="footer_menu">
-              <ul>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About us</a></li>
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer_area clearfix">
+      <div class="container">
+        <div class="row">
+          <!-- Single Widget Area -->
+          <div class="col-12 col-md-6">
+            <div class="single_widget_area d-flex mb-30">
+              <!-- Footer Menu -->
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="about.html">About us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Widget Area -->
+          <div class="col-12 col-md-6">
+            <div class="single_widget_area mb-30">
+              <ul class="footer_widget_menu">
+                <li><a href="#">Chính sách bảo hành</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách giao hàng</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
               </ul>
             </div>
           </div>
         </div>
-        <!-- Single Widget Area -->
-        <div class="col-12 col-md-6">
-          <div class="single_widget_area mb-30">
-            <ul class="footer_widget_menu">
-              <li><a href="#">Chính sách bảo hành</a></li>
-              <li><a href="#">Chính sách thanh toán</a></li>
-              <li><a href="#">Chính sách giao hàng</a></li>
-              <li><a href="#">Chính sách bảo mật</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
-      <div class="row align-items-end">
-        <!-- Single Widget Area -->
-        <div class="col-12 col-md-6">
-          <div class="single_widget_area">
-            <div class="footer_heading mb-30">
-              <h6>Email</h6>
-            </div>
-            <div class="subscribtion_form">
-              <form action="#" method="post">
-                <input
-                  type="email"
-                  name="mail"
-                  class="mail"
-                  placeholder="Your email here"
-                />
-                <button type="submit" class="submit">
-                  Send
-                </button>
-              </form>
+        <div class="row align-items-end">
+          <!-- Single Widget Area -->
+          <div class="col-12 col-md-6">
+            <div class="single_widget_area">
+              <div class="footer_heading mb-30">
+                <h6>Email</h6>
+              </div>
+              <div class="subscribtion_form">
+                <form action="#" method="post">
+                  <input
+                    type="email"
+                    name="mail"
+                    class="mail"
+                    placeholder="Your email here"
+                  />
+                  <button type="submit" class="submit">Send</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row mt-5">
-        <div class="col-md-12 text-center">
-          <p>
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | Made by Nguyen Phan Anh Tuan
-          </p>
+        <div class="row mt-5">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved | Made by Nguyen Phan Anh Tuan
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- ##### Footer Area End ##### -->
+    </footer>
+    <!-- ##### Footer Area End ##### -->
 
     <!-- jQuery (Necessary for All JavaScript Plugins) -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
@@ -670,7 +751,6 @@
     <script src="js/classy-nav.min.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-
-</body>
-
+    <script src="shopCart.js"></script>
+  </body>
 </html>

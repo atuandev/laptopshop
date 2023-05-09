@@ -69,52 +69,13 @@
           </div>
           <!-- Cart Area -->
           <div class="cart-area">
-            <a href="#" id="essenceCartBtn"
-              ><img src="img/core-img/bag.svg" alt="" /> <span>3</span></a
+            <a onclick="showCart()" id="essenceCartBtn"
+              ><img src="img/core-img/bag.svg" alt="" /> <span class="countSp"></span></a
             >
           </div>
         </div>
       </div>
     </header>
-    <!-- Modal -->
-    <div class="modal fade" id="login" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Đăng nhập</h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                  <label class="form-label" for="form2Example1"
-                    >Tên đăng nhập</label
-                  >
-                <input type="email" id="form2Example1" class="form-control" />
-              </div>
-
-              <!-- Password input -->
-              <div class="form-outline mb-4">
-                  <label class="form-label" for="form2Example2">Mật khẩu</label>
-                <input
-                  type="password"
-                  id="form2Example2"
-                  class="form-control"
-                />
-              </div>
-              <!-- Submit button -->
-              <button type="button" class="btn btn-primary btn-block mb-4">
-                Đăng nhập
-              </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- ##### Single Product Details Area Start ##### -->
     <section class="single_product_details_area d-flex align-items-center">
@@ -134,39 +95,61 @@
           <h2>Laptop gaming Dell G15 5530 i7H165W11GR4060
         </h2>
         </a>
-        <p class="product-price">
-          <span class="old-price">$65.00</span> $49.00
+        <p class="product-price"> $<span>49.00</span>
         </p>
         <p class="product-desc">
             Laptop gaming Dell G15 5530 i7H165W11GR4060 là sản phẩm nằm trong phân khúc trên laptop gaming cao cấp trên 30 triệu và là thế hệ chơi game tiếp theo của Dell. Vốn nổi tiếng với những chiếc laptop văn phòng thì nay Dell mang đến cho game thủ một lựa chọn mới đầy tính năng, cấu hình mạnh mẽ và đương đầu với vô số tựa game dễ dàng.
         </p>
 
         <!-- Form -->
-        <form class="cart-form clearfix" method="post">
+        <div class="cart-form clearfix">
           <!-- Select Box -->
           <div class="select-box d-flex mt-50 mb-30">
             <select name="select" id="productColor">
-              <option value="value">Color: Black</option>
-              <option value="value">Color: White</option>
-              <option value="value">Color: Red</option>
-              <option value="value">Color: Purple</option>
+              <option value="Black">Color: Black</option>
+              <option value="White">Color: White</option>
+              <option value="Red">Color: Red</option>
+              <option value="Purple">Color: Purple</option>
             </select>
           </div>
           <!-- Cart & Favourite Box -->
           <div class="cart-fav-box d-flex align-items-center">
             <!-- Cart -->
             <button
-              type="submit"
+              onclick="themGioHang(this)"
               name="addtocart"
               value="5"
               class="btn essence-btn"
+              
             >
               Add to cart
             </button>
           </div>
-        </form>
+        </d>
       </div>
     </section>
+    <div class="container">
+      <div class="showCart">
+        <table class="table">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Hình</th>
+            <th>Tên sản phẩm</th>
+            <th>Đơn giá</th>
+            <th>Màu</th>
+            <th>Thành tiền</th>
+          </tr>
+        </thead>
+        <tbody id="myCart">
+          
+        </tbody>
+      </table>
+      <div class="row justify-content-end mr-5 mb-3">
+        <a href="checkout.html" class="btn essence-btn justify-content-center text-light">Check out</a>
+      </div>
+    </div>
+  </div>
     <!-- ##### Single Product Details Area End ##### -->
 
 <!-- ##### Footer Area Start ##### -->
@@ -252,5 +235,6 @@
     <script src="js/classy-nav.min.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

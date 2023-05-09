@@ -22,7 +22,8 @@ $(document).ready(function () {
 
   function kiemTraGmail() {
     var ma = $('#gmail').val();
-    var reg = /^\S+@\S+\.\S+$/;
+    var reg = /[\w]*@*[a-z]*\.*[\w]{5,}(\.)*(com)*(@gmail\.com)/g;
+
     if (ma === '') {
       gmailSP.innerText = 'Vui lòng nhập';
       $('#gmail').removeClass('input-active');
